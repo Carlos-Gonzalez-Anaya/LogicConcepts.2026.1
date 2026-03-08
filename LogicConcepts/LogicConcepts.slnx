@@ -23,6 +23,9 @@
   <Folder Name="/08/">
     <Project Path="RegistrationFee/RegistrationFee.csproj" Id="23b7a3fb-1e6a-4af4-a7b2-f7fa08c31280" />
   </Folder>
+  <Folder Name="/12/">
+    <Project Path="sumAndAverage/sumAndAverage.csproj" Id="79b28cf7-3fcf-4938-9ebb-3a876b0082a0" />
+  </Folder>
   <Folder Name="/share/">
     <Project Path="Shared/Shared.csproj" Id="044208b6-f6c1-4a4d-8caa-0ddd6f7de39b" />
   </Folder>
