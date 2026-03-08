@@ -1,4 +1,11 @@
-﻿using Shared;
+﻿//30 OPERACIONES EN UNA MATRIZ
+//Construir un programa que cree una matriz cuadrada de orden N. La matriz se debe llenar con la siguiente formula
+//Celda[i][j] = (i + 1) - j . Luego debe mostrar la matriz como quedo llena y acto seguido, mostrar: la sumatoria de los
+//elementos de la matriz, el mayor elemento de la matriz y el menor elemento de la matriz30 OPERACIONES EN UNA MATRIZ
+
+
+
+using Shared;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
