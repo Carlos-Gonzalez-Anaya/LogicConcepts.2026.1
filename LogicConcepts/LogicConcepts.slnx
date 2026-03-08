@@ -35,6 +35,9 @@
   <Folder Name="/15/">
     <Project Path="serieTaylorModifique/serieTaylorModifique.csproj" Id="7146b589-be42-493a-9913-83bb26f7d1f5" />
   </Folder>
+  <Folder Name="/16/">
+    <Project Path="QuadraticEquations/QuadraticEquations.csproj" Id="50720362-c901-4c0a-adb0-984292f4873d" />
+  </Folder>
   <Folder Name="/share/">
     <Project Path="Shared/Shared.csproj" Id="044208b6-f6c1-4a4d-8caa-0ddd6f7de39b" />
   </Folder>
