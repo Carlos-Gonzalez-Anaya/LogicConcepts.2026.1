@@ -16,10 +16,12 @@ do
     if (n1%n2==0)
     {
         Console.WriteLine($"El número: {n2}, es multiplo de: {n1}");
+        Console.WriteLine("");
     }
     else
     {
         Console.WriteLine($"El número: {n2}, no es multiplo de: {n1}");
+        Console.WriteLine("");
     }
 
 } while (true);
