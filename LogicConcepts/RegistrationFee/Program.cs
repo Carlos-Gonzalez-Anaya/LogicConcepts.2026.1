@@ -5,10 +5,10 @@ var options = new List<string> { "s", "n" };
 
 do
 {
-    var credits = ConsoleExtension.GetInt("Ingrese el numero de Creditos a matricular: ");
-    var valueCredits = ConsoleExtension.GetInt("Ingrese el valor del credito: ");
-    var stratum = ConsoleExtension.GetInt("Ingrese el estrato del estudiante: ");
-    Console.WriteLine("");
+    var credits = ConsoleExtension.GetInt(          "Ingrese el numero de Creditos a matricular: ");
+    var valueCredits = ConsoleExtension.GetDecimal( "Ingrese el valor del credito..............: ");
+    var stratum = ConsoleExtension.GetInt(          "Ingrese el estrato del estudiante.........: ");
+
     var discount = 0.0;
     var subsidy = 0;
     var totalValueCredits = 0;
@@ -26,29 +26,32 @@ do
         discount = (1 - 0.5);
         subsidy = 100000;
     }
-    else
+    else if (stratum==3)
     {
         discount = (1 - 0.3);
+        subsidy = 0;
+    }
+    else
+    {
+        discount = 1;
         subsidy = 0;
     }
 
     if (credits <= 20)
     {
-        TuitionFee = (int)(valueCredits * credits * discount);
+        TuitionFee = (int)(valueCredits * credits * (decimal)discount);
     }
     else
     {
-        totalValueCredits = valueCredits * (credits - 20) * 2;
+        totalValueCredits = (int)(valueCredits * (credits - 20) * 2);
         TuitionFee = (int)((int)(20 * valueCredits + totalValueCredits) * discount);
     }
 
 
 
-    Console.WriteLine($"Numero de creditos: {credits}");
-    Console.WriteLine($"Valor credito: {valueCredits:C2}");
-    Console.WriteLine($"Estrato del estudiante: {stratum}");
-    Console.WriteLine($"Costo de matricula: {TuitionFee:C2}");
-    Console.WriteLine($"Valor del subsidio: {subsidy:C2}");
+
+    Console.WriteLine(                              $"Costo de matricula........................: {TuitionFee,20:C2}");
+    Console.WriteLine(                              $"Valor del subsidio........................: {subsidy,20:C2}");
     Console.WriteLine("");
 
     do
