@@ -44,6 +44,9 @@
   <Folder Name="/18/">
     <Project Path="FibonacciModifique/FibonacciModifique.csproj" Id="f47464dc-c65f-4b49-add0-cdc204b369f8" />
   </Folder>
+  <Folder Name="/30/">
+    <Project Path="OperationOnMatrix/OperationOnMatrix.csproj" Id="45f54f70-63e4-4704-a13a-659146c78c99" />
+  </Folder>
   <Folder Name="/share/">
     <Project Path="Shared/Shared.csproj" Id="044208b6-f6c1-4a4d-8caa-0ddd6f7de39b" />
   </Folder>
