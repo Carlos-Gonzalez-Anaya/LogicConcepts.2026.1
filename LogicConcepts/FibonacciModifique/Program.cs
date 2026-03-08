@@ -1,29 +1,24 @@
 ﻿using Shared;
-using System.Runtime.Serialization;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
 
 do
 {
-    var n = ConsoleExtension.GetInt("Cuantos terminos quieres: ");
+    var n = ConsoleExtension.GetInt("Cuantos terminos quieres; ");
     double a = 0;
     double b = 1;
-    double suma = 0;
 
     Console.Write($"{a}\t{b}\t");
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; i < n; i++)
     {
-        
-        double c =a+b;
+
+        double c = a + b;
         Console.Write($"{c}\t");
         a = b;
         b = c;
-        suma = c+suma;
-    
+        ;
     }
-    Console.WriteLine("");
-    Console.WriteLine($"La suma es: {suma+1}");
     Console.WriteLine("");
 
 
