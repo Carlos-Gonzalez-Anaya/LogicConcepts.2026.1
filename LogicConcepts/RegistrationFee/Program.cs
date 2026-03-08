@@ -5,9 +5,9 @@ var options = new List<string> { "s", "n" };
 
 do
 {
-    var credits = ConsoleExtension.GetInt(          "Ingrese el numero de Creditos a matricular: ");
+    var credits = ConsoleExtension.GetInt("Ingrese el numero de Creditos a matricular: ");
     var valueCredits = ConsoleExtension.GetDecimal( "Ingrese el valor del credito..............: ");
-    var stratum = ConsoleExtension.GetInt(          "Ingrese el estrato del estudiante.........: ");
+    var stratum = ConsoleExtension.GetInt("Ingrese el estrato del estudiante.........: ");
 
     var discount = 0.0;
     var subsidy = 0;
@@ -50,8 +50,8 @@ do
 
 
 
-    Console.WriteLine(                              $"Costo de matricula........................: {TuitionFee,20:C2}");
-    Console.WriteLine(                              $"Valor del subsidio........................: {subsidy,20:C2}");
+    Console.WriteLine($"Costo de matricula........................: {TuitionFee,20:C2}");
+    Console.WriteLine($"Valor del subsidio........................: {subsidy,20:C2}");
     Console.WriteLine("");
 
     do
