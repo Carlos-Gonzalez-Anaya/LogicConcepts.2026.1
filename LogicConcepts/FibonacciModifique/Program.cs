@@ -8,19 +8,24 @@ do
     var n = ConsoleExtension.GetInt("Cuantos terminos quieres; ");
     double a = 0;
     double b = 1;
+    double c = 2;
+    double suma = 0;
 
-    Console.Write($"{a}\t{b}\t");
-    for (int i = 2; i < n; i++)
+    Console.Write($"{a}\t{b}\t{c}\t");
+    for (int i = 3; i < n; i++)
     {
 
-        double c = a + b;
-        Console.Write($"{c}\t");
+        double d = b + c+a;
         a = b;
         b = c;
-        ;
+        c = d;
+        suma = suma+d;
+        Console.Write($"{d}\t");
+
     }
     Console.WriteLine("");
-
+    Console.Write($"la sumatoria es: {suma}");
+    Console.WriteLine("");
 
     do
     {
