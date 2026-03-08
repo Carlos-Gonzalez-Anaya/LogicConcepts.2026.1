@@ -24,5 +24,19 @@
 
         }
 
+        public static List<int> listPrimes(int n)
+        {
+            var primes = new List<int>();
+
+            for (int i = 2; i <= n; i++)
+            {
+                if (IsPrime(i))
+                {
+                    primes.Add(i);
+                }
+            }
+            return primes;
+
+        }
     }
 }

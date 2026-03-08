@@ -1,0 +1,38 @@
+﻿using Shared;
+
+
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
+
+do
+{
+    var n = ConsoleExtension.GetInt("cuantos numeros primos quieres ");
+    var primes = GetPrimes(n);
+    foreach (var prime in primes)
+    {
+        Console.WriteLine($"{prime, 10:N0}");
+    }
+
+
+    do
+    {
+        answer = ConsoleExtension.GetValidOptionts("¿Deseas continuar [S]i, [N]o?: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+
+
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
+List<int> GetPrimes(int n)
+{
+    var primes = new List<int>();
+    var num = 0;
+    while(primes.Count<n)
+    {
+        if (Mymath.IsPrime(num))
+        {
+            primes.Add(num);
+        }
+        num++;
+    }
+    return primes;
+}

@@ -47,8 +47,14 @@
   <Folder Name="/19/">
     <Project Path="IsPrime/IsPrime.csproj" Id="c6d08cae-d63d-403e-859b-8b767bd511a3" />
   </Folder>
+  <Folder Name="/20/">
+    <Project Path="PrimeNumbers/PrimeNumbers.csproj" Id="515cd951-ff66-4d56-8f1e-d28469572c15" />
+  </Folder>
   <Folder Name="/30/">
     <Project Path="OperationOnMatrix/OperationOnMatrix.csproj" Id="45f54f70-63e4-4704-a13a-659146c78c99" />
+  </Folder>
+  <Folder Name="/35/">
+    <Project Path="FactorDescomposition/FactorDescomposition.csproj" Id="318c234b-f9ec-4be9-a027-dfc9d7de7932" />
   </Folder>
   <Folder Name="/share/">
     <Project Path="Shared/Shared.csproj" Id="044208b6-f6c1-4a4d-8caa-0ddd6f7de39b" />
